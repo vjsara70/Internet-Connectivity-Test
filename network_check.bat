@@ -1,6 +1,6 @@
 @echo off
 :: =========================  CONFIGURATION  =========================
-set "LOGFILE=%~dp0NetWatchdog.log"
+set "LOGFILE=%~dp0Network_Check.log"
 set "GATEWAY_IP=61.247.179.9"
 set "INTERNET_IP=1.1.1.1"
 set "SMS_COMPORT=COM3"              :: <== CHANGE TO YOUR MODEM'S COM PORT
