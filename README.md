@@ -13,7 +13,7 @@ Batch Script to Test The Internet Connectivity Test in Windows
 - General → Name: NetWatchdog → “Run whether user is logged on or not” (supply credentials)
 - Triggers → New → “On a schedule” → Daily → Repeat task every: 1 minutes → for a duration of: Indefinitely
 - Actions → New → Program/script: C:\Windows\System32\cmd.exe
-- Add arguments: /c "C:\Scripts\NetWatchdog.bat"
+- Add arguments: /c "C:\Scripts\Network_Check.bat"
 - Conditions → un-tick “Start the task only if the computer is on AC power” (if needed)
 - OK → supply credentials → Done.
 
@@ -21,4 +21,4 @@ Batch Script to Test The Internet Connectivity Test in Windows
 - Change SMS_COMPORT to the actual COM port your USB modem appears on.
 - Change SMS_TARGET to the destination mobile number (include country code).
 - If your modem needs a different AT command sequence (e.g. AT+CMGS="+number"\r\nmessage\x1A) edit the :SENDSMS section.
-- Logs will accumulate in the same folder as the script (NetWatchdog.log).
+- Logs will accumulate in the same folder as the script (Network_Check.log).
